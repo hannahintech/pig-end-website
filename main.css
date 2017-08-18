@@ -9,7 +9,7 @@ body {
     margin: 2em;
 }
 
-#topline {
+header {
     display: flex;
     justify-content: row;
 }
@@ -20,7 +20,7 @@ body {
     max-height: 100px;
 }
 
-#pig-end {
+#pig-end-title-text {
     display: flex;
     margin: 0em;
     -webkit-margin-before: 0em;
@@ -29,15 +29,19 @@ body {
     -webkit-margin-end: 0em;
     padding: 0.25em;
     font-family: 'Acme', sans-serif;
-    color: #1BB575;
+    color: #3BB22A;
     font-size: 50px;
 }
 
 nav {
+    display: flex;
     font-size: 35px;
+    border-style: solid;
+    border-width: 0.1em; 
+    border-color: #FF7219;
 }
 
-#menu-list {
+#nav-menu-text-list {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -48,30 +52,40 @@ nav {
     -webkit-padding-start: 0px;
 }
 
-#menu-list > li {
+#nav-menu-text-list > li {
+    display: flex;
     padding: 0em;
     margin: 0.5em;
 }
 
-#menu-list > li > a {
+#nav-menu-text-list > li > a {
     text-decoration: none;
-    color: #1BB575;
+    color: #3BB22A;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    border-style: solid;
-    border-width: 0.1em; 
-    border-color: #B5851B;
+    padding-top: 0.05em;
+    padding-bottom: 0.05em;
+}
+
+h3 {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    color: #FF7219;
 }
 
 .section-one {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#text-one {
-    display: flex;
+.text-sec-one {
+    flex-basis: 60%;
     padding: 0.3em;
     font-size: 15px;
     font-family: 'Lora', 'Serif';
@@ -82,18 +96,15 @@ nav {
     padding: 0.3em;
     border-style: solid;
     border-width: 0.08em; 
-    border-color: #B5851B;
+    border-color: #FF7219;
 }
-
-#h3-sec-one {
-    color: #E86E0C;
-}
-
 
 .section-two {
     display: flex;
-    justify-content: center;
     flex-direction: row-reverse;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #img-sec-two {
@@ -101,15 +112,11 @@ nav {
     padding: 0.3em;
     border-style: solid;
     border-width: 0.08em; 
-    border-color: #B5851B;
+    border-color: #FF7219;
 }
 
-#h3-sec-two {
-    color: #E86E0C;
-}
-
-#text-sec-two {
-    display: flex;
+.text-sec-two {
+    flex-basis: 60%;
     padding: 0.3em;
     font-size: 15px;
     font-family: 'Lora', 'Serif';
