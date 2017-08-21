@@ -11,10 +11,14 @@ body {
 
 header {
     display: flex;
-    justify-content: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo {
+    display: flex;
+    justify-content: center;
     padding: 0.25em;
     max-width: 300px;
     max-height: 100px;
@@ -22,6 +26,7 @@ header {
 
 #pig-end-title-text {
     display: flex;
+    justify-content: center;
     margin: 0em;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
@@ -35,8 +40,12 @@ header {
 
 nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-size: 35px;
     border-style: solid;
+    border-left: none;
+    border-right: none;
     border-width: 0.1em; 
     border-color: #FF7219;
 }
@@ -73,6 +82,7 @@ h3 {
     font-size: 2em;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: #FF7219;
 }
 
@@ -82,6 +92,7 @@ h3 {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 3em;
 }
 
 .text-sec-one {
@@ -94,7 +105,7 @@ h3 {
 #img-sec-one {
     max-width: 350px;
     padding: 0.3em;
-    border-style: solid;
+    border-style: none;
     border-width: 0.08em; 
     border-color: #FF7219;
 }
@@ -105,12 +116,13 @@ h3 {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 2em;
 }
 
 #img-sec-two {
     max-width: 350px;
     padding: 0.3em;
-    border-style: solid;
+    border-style: none;
     border-width: 0.08em; 
     border-color: #FF7219;
 }
