@@ -1,6 +1,6 @@
-{
-  "hosting": {
-    "public": "pig-end-website",
+{  
+   "hosting": {
+    "public": "website-files",
     "ignore": [
       "firebase.json",
       "**/.*",
