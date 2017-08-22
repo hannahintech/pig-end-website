@@ -1,9 +1,9 @@
 html {
     font-family: 'Acme', 'sans-serif';
 }
-/*head {
 
-}*/
+
+/*CSS for Main Body*/
 
 body {
     margin: 2em;
@@ -76,19 +76,75 @@ nav {
     padding-bottom: 0.05em;
 }
 
+p {
+    display: flex;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1em;
+}
+
+/* CSS for Home */
+
+.jumbo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.jumbo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 60%;
+    padding: 0.3em;
+    font-size: 18px;
+    font-family: 'Lora', 'Serif';
+}
+
+h4 {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FF7219;
+}
+
+#home-jumbo-text {
+    font-size: 22px;
+}
+
+.home-main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 60%;
+    padding: 0.3em;
+    font-size: 18px;
+    font-family: 'Lora', 'Serif';
+    font-size: 20px;
+}
+
+#jumbo-img {
+    max-width: 560px;
+    padding: 1.5em;
+}
+
+
+/* CSS for About US */
+
 h3 {
     flex-basis: 100%;
     flex-shrink: 0;
-    font-size: 2em;
+    font-size: 2.5em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     color: #FF7219;
 }
 
 .section-one {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -98,21 +154,21 @@ h3 {
 .text-sec-one {
     flex-basis: 60%;
     padding: 0.3em;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Lora', 'Serif';
 }
 
 #img-sec-one {
-    max-width: 350px;
-    padding: 0.3em;
-    border-style: none;
-    border-width: 0.08em; 
-    border-color: #FF7219;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 480px;
+    padding: 0.5em;
 }
 
 .section-two {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -120,19 +176,42 @@ h3 {
 }
 
 #img-sec-two {
-    max-width: 350px;
-    padding: 0.3em;
-    border-style: none;
-    border-width: 0.08em; 
-    border-color: #FF7219;
+    max-width: 480px;
+    padding: 0.5em;
 }
 
 .text-sec-two {
     flex-basis: 60%;
     padding: 0.3em;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Lora', 'Serif';
 }
+
+.section-three {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 3em;
+}
+
+.text-sec-three {
+    flex-basis: 60%;
+    padding: 0.3em;
+    font-size: 18px;
+    font-family: 'Lora', 'Serif';
+}
+
+#img-sec-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 480px;
+    padding: 0.5em;
+}
+
+/* CSS for Footer */
 
 footer {
 
