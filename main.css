@@ -211,20 +211,46 @@ h3 {
     padding: 0.5em;
 }
 
+/* CSS for Blog */
+
+.blog-placeholder { /*this is doing nothing atm*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 /* CSS for Footer */
 
 footer {
-
-}
-
-.main-footer {
-
-}
-
-#img-footer {
-
+    background-color: RGBA(175,255,154,0.6);
+    
 }
 
 #address-footer {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
 
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-text {
+    flex-basis: 60%;
+    padding: 0.3em;
+    font-size: 18px;
+    font-family: 'Lora', 'Serif';
+    font-weight: bold;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-word-style {
+    color: #6226B2;
 }
