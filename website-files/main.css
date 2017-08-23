@@ -116,12 +116,37 @@ h4 {
 .home-main-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     flex-basis: 60%;
     padding: 0.3em;
     font-size: 18px;
     font-family: 'Lora', 'Serif';
     font-size: 20px;
+    margin-bottom: 3em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-color: #6226B2; 
+}
+
+.home-main-text-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 60%;
+    padding: 0.3em;
+    font-size: 18px;
+    font-family: 'Lora', 'Serif';
+    font-size: 20px;
+    margin-bottom: 3em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #6226B2; 
 }
 
 #jumbo-img {
@@ -216,8 +241,8 @@ h3 {
 .blog-placeholder { /*this is doing nothing atm*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 /* CSS for Footer */
@@ -228,7 +253,7 @@ footer {
 }
 
 #address-footer {
-    padding-top: 0.8em;
+    padding-top: 2em;
     padding-bottom: 0.8em;
 }
 
@@ -253,4 +278,11 @@ span {
 
 #footer-word-style {
     color: #6226B2;
+}
+
+.google-static-directional-map {
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    padding-right: 2em;
 }
