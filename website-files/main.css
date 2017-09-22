@@ -3,44 +3,59 @@ html {
 }
 
 
+/* @media rules
+
+@media only screen  and (min-width : 1824px) {
+    .header img.header-img {
+        width: 60%;
+    }
+    }
+    */
+
 /*CSS for Main Body*/
 
 body {
-    margin: 2em;
+    background:rgba(231, 243, 223, 1);
 }
 
 header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.header-img {
+    width: 60%;
+    height: auto;
 }
 
 #logo {
-    display: flex;
-    justify-content: center;
-    padding: 0.25em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
     max-width: 300px;
     max-height: 100px;
 }
 
 #pig-end-title-text {
-    display: flex;
-    justify-content: center;
     margin: 0em;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0em;
     -webkit-margin-end: 0em;
-    padding: 0.25em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
     font-family: 'Acme', sans-serif;
     color: #3BB22A;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     font-size: 35px;
     border-style: solid;
@@ -48,11 +63,13 @@ nav {
     border-right: none;
     border-width: 0.1em; 
     border-color: #FF7219;
+    margin: 0px;
 }
 
 #nav-menu-text-list {
     display: flex;
     flex-direction: row;
+    
     list-style: none;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
@@ -62,7 +79,6 @@ nav {
 }
 
 #nav-menu-text-list > li {
-    display: flex;
     padding: 0em;
     margin: 0.5em;
 }
@@ -95,7 +111,7 @@ p {
     align-items: flex-start;
     flex-basis: 60%;
     padding: 0.3em;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Lora', 'Serif';
 }
 
@@ -110,7 +126,7 @@ h4 {
 }
 
 #home-jumbo-text {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .home-main-text {
