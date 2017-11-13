@@ -1,0 +1,17 @@
+
+Div
+	title
+Div
+	Image (covering)
+Div
+	Welcome text (with a border?)
+Div
+	icons + text
+Div
+	background as a map
+	plus cards with an image and one line of text
+Div
+	Text CTA with a big icon (with a border? or background colour)
+Footer
+	logo, navigation on the left and facebook, email and phone number on the right
+	

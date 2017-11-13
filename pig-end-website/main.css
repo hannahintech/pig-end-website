@@ -1,304 +1,122 @@
-html {
-    font-family: 'Acme', 'sans-serif';
+
+/*naming the page; top header*/
+
+.heading {
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	padding-left: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-right: 20px;
 }
 
+/*main banner, simply an image that is engaging and shows off the Millhouse*/
 
-/* @media rules
-
-@media only screen  and (min-width : 1824px) {
-    .header img.header-img {
-        width: 60%;
-    }
-    }
-    */
-
-/*CSS for Main Body*/
-
-body {
-    background:rgba(231, 243, 223, 1);
+.bannerHolder{
+    width: 100%;
+    height: 700px;
+    min-height: 200px;
+    position: relative;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+.bannerImage{
+    height: 100%;
+    position:relative;
+    background: url("./temp-assets/millhouse-header.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.header-img {
-    width: 60%;
-    height: auto;
+/*tagline/introduction and short engaging about section*/
+
+.introSection {
+	padding: 20px;
 }
 
-#logo {
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    padding-left: 1em;
-    padding-right: 1em;
-    max-width: 300px;
-    max-height: 100px;
+.introHeading {
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
-#pig-end-title-text {
-    margin: 0em;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0em;
-    -webkit-margin-end: 0em;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-family: 'Acme', sans-serif;
-    color: #3BB22A;
-    font-size: 60px;
+.introText {
+	font-size: 25px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	width: 600px;
+  	margin: 0 auto;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    border-style: solid;
-    border-left: none;
-    border-right: none;
-    border-width: 0.1em; 
-    border-color: #FF7219;
-    margin: 0px;
-}
-
-#nav-menu-text-list {
-    display: flex;
-    flex-direction: row;
-    
-    list-style: none;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
-}
-
-#nav-menu-text-list > li {
-    padding: 0em;
-    margin: 0.5em;
-}
-
-#nav-menu-text-list > li > a {
-    text-decoration: none;
-    color: #3BB22A;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-top: 0.05em;
-    padding-bottom: 0.05em;
-}
-
-p {
-    display: flex;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 1em;
-}
-
-/* CSS for Home */
-
-.jumbo {
-    display: flex;
-    align-items: flex-start;
-}
-
-.jumbo-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-basis: 60%;
-    padding: 0.3em;
-    font-size: 15px;
-    font-family: 'Lora', 'Serif';
-}
+/* section with icons and multiple calls to action*/
 
 h4 {
-    flex-basis: 100%;
-    flex-shrink: 0;
-    font-size: 2.5em;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: #FF7219;
+	margin: 35px 0 0 0;
 }
 
-#home-jumbo-text {
-    font-size: 20px;
+.multiCallToActionSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-.home-main-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: 60%;
-    padding: 0.3em;
-    font-size: 18px;
-    font-family: 'Lora', 'Serif';
-    font-size: 20px;
-    margin-bottom: 3em;
-    border-style: solid;
-    border-width: 0.2em;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    border-color: #6226B2; 
+.iconContainer {
+		margin: 40px 30px 60px 30px;
 }
 
-.home-main-text-two {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: 60%;
-    padding: 0.3em;
-    font-size: 18px;
-    font-family: 'Lora', 'Serif';
-    font-size: 20px;
-    margin-bottom: 3em;
-    border-style: solid;
-    border-width: 0.2em;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: #6226B2; 
+.iconImgContainer {
+	background: no-repeat center center;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+	padding: 25px;
+	margin: 0 35px 35px 35px;
 }
 
-#jumbo-img {
-    max-width: 560px;
-    padding: 1.5em;
+.visitImgDiv {
+	background-image: url("./temp-assets/coffeeHiRes.png");
 }
 
-
-/* CSS for About US */
-
-h3 {
-    flex-basis: 100%;
-    flex-shrink: 0;
-    font-size: 2.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #FF7219;
+.stayImgDiv {
+	background-image: url("./temp-assets/bedHiRes.png");
 }
 
-.section-one {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 3em;
+.exploreImgDiv {
+	background-image: url("./temp-assets/compassHiRes.png");
 }
 
-.text-sec-one {
-    flex-basis: 60%;
-    padding: 0.3em;
-    font-size: 18px;
-    font-family: 'Lora', 'Serif';
+/*Map of the area and some images with information for sightseeing*/
+
+.informationForSightseeing {
+	width: 100%;
+    height: 700px;
+    min-height: 200px;
+    position: relative;
 }
 
-#img-sec-one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 480px;
-    padding: 0.5em;
+.informationForSightseeingMap {
+	height: 100%;
+	position:relative;
+	background: url("./temp-assets/wlosien-image.jpg")no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-.section-two {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 2em;
+/* cards with images and some text to explain what they are
+
+to complete! */
+
+/* call to action for booking the millhouse */
+
+.callToActionBookTheMillhouse {
+
 }
 
-#img-sec-two {
-    max-width: 480px;
-    padding: 0.5em;
-}
-
-.text-sec-two {
-    flex-basis: 60%;
-    padding: 0.3em;
-    font-size: 18px;
-    font-family: 'Lora', 'Serif';
-}
-
-.section-three {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 3em;
-}
-
-.text-sec-three {
-    flex-basis: 60%;
-    padding: 0.3em;
-    font-size: 18px;
-    font-family: 'Lora', 'Serif';
-}
-
-#img-sec-three {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 480px;
-    padding: 0.5em;
-}
-
-/* CSS for Blog */
-
-.blog-placeholder { /*this is doing nothing atm*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-/* CSS for Footer */
-
-footer {
-    background-color: RGBA(175,255,154,0.6);
-    
-}
-
-#address-footer {
-    padding-top: 2em;
-    padding-bottom: 0.8em;
-}
-
-.main-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.footer-text {
-    flex-basis: 60%;
-    padding: 0.3em;
-    font-size: 18px;
-    font-family: 'Lora', 'Serif';
-    font-weight: bold;
-}
-
-span {
-    display: flex;
-    flex-direction: column;
-}
-
-#footer-word-style {
-    color: #6226B2;
-}
-
-.google-static-directional-map {
-    display: flex;
-    padding-top: 2em;
-    padding-bottom: 3em;
-    padding-right: 2em;
+.callToActionBookTheMillhouseText {
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
