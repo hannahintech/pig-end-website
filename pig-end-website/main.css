@@ -2,30 +2,31 @@
 /*naming the page; top header*/
 
 .heading {
-	font-size: 45px;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	padding-left: 20px;
-	padding-top: 40px;
-	padding-bottom: 20px;
-	padding-right: 20px;
+  font-size: 45px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 /*main banner, simply an image that is engaging and shows off the Millhouse*/
 
 .bannerHolder{
+    display: flex;
     width: 100%;
-    height: 700px;
+    height: 400px;
     min-height: 200px;
-    position: relative;
 }
 
 .bannerImage{
-    height: 100%;
-    position:relative;
-    background: url("./temp-assets/millhouse-header.jpg")no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  background: url("./temp-assets/millhouse-header.jpg")no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*tagline/introduction and short engaging about section*/
@@ -55,25 +56,25 @@ h4 {
 }
 
 .multiCallToActionSection {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	text-align: center;
-	font-size: 25px;
-	font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .iconContainer {
-		margin: 40px 30px 60px 30px;
+  margin: 40px 30px 60px 30px;
 }
 
 .iconImgContainer {
-	background: no-repeat center center;
-	background-size: contain;
-	width: 50px;
-	height: 50px;
-	padding: 25px;
-	margin: 0 35px 35px 35px;
+  background: no-repeat center center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  margin: 0 35px 35px 35px;
 }
 
 .visitImgDiv {
@@ -91,18 +92,18 @@ h4 {
 /*Map of the area and some images with information for sightseeing*/
 
 .informationForSightseeing {
-	width: 100%;
+    width: 100%;
     height: 700px;
     min-height: 200px;
     position: relative;
 }
 
 .informationForSightseeingMap {
-	height: 100%;
-	position:relative;
-	background: url("./temp-assets/wlosien-image.jpg")no-repeat;
-	background-size: cover;
-	background-position: center;
+  height: 100%;
+  position:relative;
+  background: url("./temp-assets/wlosien-image.jpg")no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* cards with images and some text to explain what they are
